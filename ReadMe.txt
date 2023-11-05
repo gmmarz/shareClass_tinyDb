@@ -8,3 +8,5 @@ Pode ser utilizado como alternativa ao SQLite3
 
 para tutorial como tinydb
 dontpad.com/tinydb
+
+Uma das aplicações é utilizar o tiny como cache para uma consulta de SQL
