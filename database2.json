@@ -1,0 +1,16 @@
+{
+  "produtos": {
+    "1": {
+      "nome": "Notebook",
+      "preco": 3999.9,
+      "processador": "intel core i5",
+      "ram_gb": 8
+    },
+    "2": {
+      "nome": "geladeira",
+      "preco": 4500.9,
+      "volume_litros": 300,
+      "dispenser_agua": false
+    }
+  }
+}

@@ -3,14 +3,23 @@
     "1": {
       "name": "Davi",
       "altura": 1.75
+    }
+  },
+  "pessoas": {
+    "1": {
+      "nome": "Joao",
+      "altura": 1.75
     },
     "2": {
-      "name": "Davi",
-      "altura": 1.75
-    },
-    "3": {
-      "name": "Davi",
-      "altura": 1.75
+      "nome": "Walter",
+      "altura": 1.8
+    }
+  },
+  "animais": {
+    "1": {
+      "animal": "gato",
+      "cor": "laranja",
+      "demon": true
     }
   }
 }
