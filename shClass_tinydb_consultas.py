@@ -18,5 +18,11 @@ t_pessoas = db.table('pessoas')
 pessoa = Query()
 
 pessoas = t_pessoas.search(pessoa.altura < 1.65)
-mostrar_pessoas(pessoas)
+# mostrar_pessoas(pessoas)
 desenvolvedores = t_pessoas.search(pessoa.profissao=='Desenvolvedor')
+
+#Mostrando pessoas que tenham s no nome
+pessoas_com_s = t_pessoas.search(pessoa.nome.search('s'))
+# mostrar_pessoas(pessoas_com_s)
+
+

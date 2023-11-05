@@ -1,10 +1,10 @@
 Slides:
 
-
+TinyDB
 https://www.canva.com/design/DAFzC5CulD8/04iwNi332-WTnLZhA--Yxw/edit?utm_content=DAFzC5CulD8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-
-====
+	
+==================================================
 Como ativar Ambientes Virtuais:
 
 https://www.youtube.com/watch?v=m1TYpvIYm74
@@ -89,6 +89,36 @@ t_pessoas = db.table('pessoas')
 
 
 
+=====================================================
+Atualizando Documentos
+
+from tinydb import TinyDB, Query
+
+db = TinyDB('./database.json', indent=2)
+t_pessoas = db.table('pessoas')
+
+Pessoa = Query()
+
+davi = t_pessoas.get(Pessoa.nome == 'Davi')
+print(davi)
+t_pessoas.update(
+    {'altura': 1.74, 'profissao': 'Desenvolvedor'}, 
+    doc_ids=[davi.doc_id]
+)
+
+=====================================================
+Removendo Documentos 
+from tinydb import TinyDB, Query
+
+db = TinyDB('./database.json', indent=2)
+t_pessoas = db.table('pessoas')
+
+Pessoa = Query()
+
+
+t_pessoas.remove(Pessoa.nome == 'Samuel')
+samueis = t_pessoas.search(Pessoa.nome == 'Samuel')
+print(samueis)
 
 ======================================================
 Banco de Dados
